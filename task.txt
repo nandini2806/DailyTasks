@@ -1,0 +1,27 @@
+
+public class TaskMock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your String");
+		String s=sc.nextLine();
+		
+		String[] str=s.split(" ");
+		String first=str[0];
+		//System.out.println(first);
+		
+		switch(first) {
+		case "add":System.out.println(Integer.parseInt(str[1])+Integer.parseInt(str[2]));
+		break;
+		case "sub":System.out.println(Integer.parseInt(str[1])-Integer.parseInt(str[2]));
+		break;
+		case "multiply":System.out.println(Integer.parseInt(str[1])*Integer.parseInt(str[2]));
+		break;
+		case "division":System.out.println(Integer.parseInt(str[1])/Integer.parseInt(str[2]));
+		break;
+		}
+
+	}
+
+	}	
